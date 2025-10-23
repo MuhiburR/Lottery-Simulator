@@ -13,22 +13,27 @@ class Main {
 		int redBall[] = new int [1];
 		
 		int userNums[] = new int [5];
-		
+		int userRedBall = 0;
 
-		//User input
-		System.out.println("these numbers can range anywhere from 1 - 69");
-		System.out.println("Please enter your lottery 5 numbers:");
+		//User input for white balls
+		System.out.println("White balls can range anywhere from 1 - 69");
+		System.out.println("Please enter your 5 white ball numbers: ");
 		for (int count = 0; count < 5; count++) {
 		 userNums[count] = s.nextInt();
 		}
 
+		//User input for red ball
+		System.out.println("Red ball can range from 1 - 26");
+		System.out.println("Please enter your red ball number: ");
+		userRedBall = s.nextInt();
+		
 		//Closing Scanner
 		s.close();
 
 		//Empty Space
 		System.out.println();
 
-		//Big For Loop for one time lottery
+		//Big For Loop for one-time lottery
 		for (int repeat = 0; repeat < 1; repeat++){
 			System.out.println("White Balls");
 
@@ -63,12 +68,7 @@ class Main {
 		}
 			
 		
-	boolean hasRedBallMatch = false;
-		for (int userNum : userNums) {
-				 if (userNum == redBall[0]) {
-					 hasRedBallMatch = true;
-				 }
-		}
+	boolean hasRedBallMatch = (userRedBall == redBall[0]);
 
 //if you won or didn't win; Print Statements
 if ((hasRedBallMatch) && (whiteBallMatches == 5)){
