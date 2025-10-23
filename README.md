@@ -114,4 +114,5 @@ This is an educational project created during high school to practice Java funda
 ---
 
 *Based on Powerball lottery rules for educational purposes*
+
 *Created as part of learning Java programming*
