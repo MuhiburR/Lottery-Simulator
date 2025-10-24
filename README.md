@@ -41,19 +41,19 @@ A Java console application that simulates the Powerball lottery system, allowing
 
 2. **Compile the program**
    ```bash
-   javac Main.java
+   javac main.java
    ```
 
 3. **Run the simulator**
    ```bash
-   java Main
+   java main
    ```
 
 ## 💡 Sample Gameplay
 
 ```
 Lottery Simulator!
-these numbers can range anywhere from 1 - 69
+These numbers can range anywhere from 1 - 69
 Please enter your lottery 5 numbers:
 7
 14
@@ -79,9 +79,9 @@ Please try again!
 1. User inputs 5 numbers (1-69)
 2. Program generates 5 unique random white balls (1-69)
 3. Program generates 1 random red ball (1-26)
-4. System compares user's numbers against drawn numbers
+4. The system compares the user's numbers against the drawn numbers
 5. Prize tier is calculated based on matches
-6. Result is displayed to the user
+6. The result is displayed to the user
 
 ## 📊 Learning Outcomes
 
